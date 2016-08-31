@@ -1,0 +1,645 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Healthchecks | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../services/instrumentation.html" />
+    
+    
+    <link rel="prev" href="../services/distributed-synchronisation.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.9"
+        data-chapter-title="Healthchecks"
+        data-filepath="services/healthchecks.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="health-checks">Health checks</h1>
+<p>Health checks are used to monitor the status of services, they cover various metrics such as the status of shared infrastructure and the error rate of requests to that service.</p>
+<p>The results of these health checks are periodically publishes the monitoring service which collect the health checks and statistics from all services. These values are also published to zabbix which is another monitoring tool that also monitors our shared infrastructure.</p>
+<h2 id="available-health-checks">Available health checks</h2>
+<p>Every service has the following health checks built-in:</p>
+<ul>
+<li><code>com.hailocab.kernel.configloaded</code>: Ensures that the service has loaded its config at least once</li>
+<li><code>com.hailocab.kernel.servicetoservice.auth.badrole</code>: Monitors the rate of authorisation errors</li>
+<li><code>com.hailocab.kernel.resource.capacity</code>: Monitors the worker pools for each endpoint to ensure that the service has not become overloaded</li>
+<li><p><code>com.hailocab.kernel.client.circuit</code>: Monitors the circuit breakers for each endpoint, returns an error if any breakers are open</p>
+<p>There are also a number of health checks for the shared infrastructure, for more information about these health checks see the shared infrastructure section of the documentation.</p>
+</li>
+</ul>
+<h2 id="registering-health-checks">Registering health checks</h2>
+<p>Registering a health check is very similar to registering an endpoint, in the <code>main.go</code> file in your service you should add a call to <code>Healthcheck</code> after <code>Init()</code> but before <code>Run()</code>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> service <span class="hljs-string">&quot;github.com/HailoOSS/platform/server&quot;</span>
+
+<span class="hljs-keyword">func</span> main() {
+    service.Init()
+
+    service.Healthcheck(healthcheckId, healthcheckFunction)
+
+    service.Run()
+}
+</code></pre>
+<h2 id="creating-your-own-health-checks">Creating your own health checks</h2>
+<p>Creating a health check is as simple as choosing a unique health check ID and creating a new function which implements the <code>service/healthcheck.HealthCheck</code> interface. The health check function returns two values, an optional map containing any extra data about the health check and an error. When the error is non-nil the health check becomes unhealthy.</p>
+<p>For example here is a simple health check that only becomes unhealthy when the <code>unhealthy</code> variable becomes <code>true</code>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> healthcheck
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/HailoOSS/service/healthcheck&quot;</span>
+)
+
+
+<span class="hljs-keyword">const</span> (
+    HealthCheckId   = <span class="hljs-string">&quot;com.hailocab.service.example.healthcheck&quot;</span>
+)
+
+<span class="hljs-keyword">var</span> (
+    unhealthy <span class="hljs-typename">bool</span>
+)
+
+<span class="hljs-comment">// HealthCheck asserts we can PUB to NSQ</span>
+<span class="hljs-keyword">func</span> HealthCheck() healthcheck.Checker {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">func</span>() (<span class="hljs-keyword">map</span>[<span class="hljs-typename">string</span>]<span class="hljs-typename">string</span>, error) {
+        <span class="hljs-keyword">if</span> unhealthy {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">map</span>[<span class="hljs-typename">string</span>]<span class="hljs-typename">string</span>{
+                <span class="hljs-string">&quot;unhealthy&quot;</span>: <span class="hljs-string">&quot;true&quot;</span>,
+            }, fmt.Errorf(<span class="hljs-string">&quot;The service has become unhealthy&quot;</span>)
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-constant">nil</span>, <span class="hljs-constant">nil</span>
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/distributed-synchronisation.html" class="navigation navigation-prev " aria-label="Previous page: Distributed Synchronisation"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/instrumentation.html" class="navigation navigation-next " aria-label="Next page: Instrumentation"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

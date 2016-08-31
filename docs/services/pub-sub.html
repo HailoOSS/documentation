@@ -1,0 +1,685 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Pub/Sub | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../services/distributed-synchronisation.html" />
+    
+    
+    <link rel="prev" href="../services/database-access.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.7"
+        data-chapter-title="Pub/Sub"
+        data-filepath="services/pub-sub.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="pubsub">Pub/Sub</h1>
+<p>As well as supporting RPC the H2 platform also supports pub/sub (or asynchronous message processing) using NSQ. Many parts of Hailo are built using PubSub including our data pipeline which pulls events from the <code>event</code> topic and stores them in Redshift and BigQuery. </p>
+<p>Pub/Sub allows messages to be published to a topic and have services consume messages from channels. The messages tend to be JSON messages however the only restriction is that they be encoded as <code>[]byte</code>. Each message will be sent to each channel in a topic and are delivered at least once, however because messages can be lost if a NSQd node dies messages can be lost. To try and prevent message loss we publish each message twice (to a different node each time), this means that messages might be received multiple times so handlers need to either be idempotent or de-duplicate the messages.</p>
+<p>The service layer contains the <code>nsq</code> package which is used for pub/sub and abstracts away the creation of connections and host/configuration changes. The package is split into two different components, the publisher and the subscriber, we will now explain these two components.</p>
+<h1 id="publishers">Publishers</h1>
+<p>Publishers are used to send messages from a service to an NSQ topic, as mentioned earlier the service layer publisher fetches the list of hosts from the config service and creates a publisher for each host. When a message is published using either the <code>Publish</code> or <code>MultiPublish</code> functions the message is then sent <code>N</code> times (where <code>N</code> is based on the configured write consistency, this can be <code>ONE</code>/<code>TWO</code>/<code>QUORUM</code>). Each time the message is sent a host is selected from the host pool and sent, if this fails then another host is tried.</p>
+<p>Here is an example of how to publish an event to the <code>example</code> topic:</p>
+<pre><code class="lang-go">bytes, err := json.Marshal(<span class="hljs-keyword">map</span>[<span class="hljs-typename">string</span>]<span class="hljs-typename">string</span>{
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-string">&quot;example&quot;</span>,
+    <span class="hljs-string">&quot;timestamp&quot;</span>: strconv.Itoa(<span class="hljs-typename">int</span>(time.Now().Unix())),
+    <span class="hljs-string">&quot;foo&quot;</span>:       <span class="hljs-string">&quot;bar&quot;</span>,
+})
+<span class="hljs-keyword">if</span> err != <span class="hljs-constant">nil</span> {
+    <span class="hljs-comment">// Handle error</span>
+}
+<span class="hljs-keyword">if</span> err := nsq.Publish(<span class="hljs-string">&quot;event&quot;</span>, bytes); err != <span class="hljs-constant">nil</span> {
+    <span class="hljs-comment">// Handle error</span>
+}
+</code></pre>
+<h1 id="subscribers">Subscribers</h1>
+<p>Subscribers (or consumers) are used to ingest messages published by other services, each subscriber requires a topic name which should be the same as the topic you used when publishing the message. A channel name is also required which allows multiple services to listen to the same topic and all receive a copy of the message.</p>
+<p>To create a subscriber you need to first create a handler, this can either be a struct with a <code>HandleMessage</code> function or a function wrapped by the <code>HandlerFunc</code> type, for example here is a basic example of a subscriber that listens to messages on the <code>example</code> topic. We have chosen to put out subscriber in the ingester package, this is not required but is recommended to keep services consistent.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> ingester
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;encoding/json&quot;</span>
+
+    log <span class="hljs-string">&quot;github.com/cihub/seelog&quot;</span>
+    <span class="hljs-string">&quot;github.com/HailoOSS/service/nsq&quot;</span>
+    nsqlib <span class="hljs-string">&quot;github.com/HailoOSS/go-nsq&quot;</span>
+)
+
+<span class="hljs-keyword">const</span> (
+    TopicName   = <span class="hljs-string">&quot;example&quot;</span>
+    ChannelName = <span class="hljs-string">&quot;example&quot;</span>
+    maxInFlight = <span class="hljs-number">100</span>
+    numHandlers = <span class="hljs-number">5</span>
+)
+
+<span class="hljs-comment">// Run will connect to NSQ, consume and map events, and trigger comms to be sent</span>
+<span class="hljs-comment">// We can trigger after initialisation via `server.RegisterPostConnectHandler(ingester.Run)`</span>
+<span class="hljs-keyword">func</span> Run() {
+    subscriber, err := nsq.NewDefaultSubscriber(TopicName, ChannelName)
+    <span class="hljs-keyword">if</span> err != <span class="hljs-constant">nil</span> {
+        log.Warnf(<span class="hljs-string">&quot;[Ingester] Failed to attach to %v topic for ingesting points for storage: %v&quot;</span>, TopicName, err)
+        <span class="hljs-keyword">return</span>
+    }
+
+    h := &amp;Handler{}
+
+    subscriber.SetMaxInFlight(maxInFlight)
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">1</span>; i &lt; numHandlers; i++ {
+        subscriber.AddHandler(p)
+    }
+
+    log.Infof(<span class="hljs-string">&quot;[Ingester] About to connect using %s %s&quot;</span>, TopicName, ChannelName)
+    subscriber.Connect()
+}
+
+<span class="hljs-keyword">type</span> Handler <span class="hljs-keyword">struct</span> {}
+
+<span class="hljs-keyword">func</span> (h Handler) HandleMessage(msg *nsqlib.Message) error {
+    event := <span class="hljs-keyword">map</span>[<span class="hljs-typename">string</span>]<span class="hljs-typename">string</span>{}
+    <span class="hljs-keyword">if</span> err := json.Unmarshal(msg.Body, &amp;event); err != <span class="hljs-constant">nil</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-constant">nil</span>
+    }
+
+    <span class="hljs-comment">// Handle message, return a non-nil error if the message failed to be processed </span>
+    <span class="hljs-comment">// and should be retried</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-constant">nil</span>
+}
+</code></pre>
+<p>As the subscriber needs to run in the background we create an exported <code>Run</code> function which is called in <code>main.go</code> when the service starts up, for example:</p>
+<pre><code class="lang-go">service.RegisterPostConnectHandler(ingester.Run)
+</code></pre>
+<h2 id="ephemeral-channels">Ephemeral Channels</h2>
+<p>Ephemeral channels are temporary channels that exist only as long as a subscriber is connected to that channel, this can be useful if you want each instance of a service to have a copy of a message sent to a topic.</p>
+<p>To create an ephemeral channel simply use a channel name ending in <code>#ephemeral</code>, also each instance should have a unique prefix such as the instance ID, for example <code>example-service-UUID#ephemeral</code>.</p>
+<h1 id="firehose-events">Firehose Events</h1>
+<p>As mentioned Hailo uses NSQ for its main data pipeline, this means any service can publish events to this topic or subscribe. Because of this there are a couple of things to be aware of when using the firehose:</p>
+<ul>
+<li>Events are published to the <code>event</code> topic but a service called <code>gstats</code> publishes these events to the <code>jstats.allingested</code> and <code>firehose</code> topics.</li>
+<li>Any service that requires ALL events including the <code>point</code> event should use the <code>jstats.allingested</code> topic</li>
+<li>The <code>firehose</code> topic includes all events excluding the <code>point</code> event, this should be used by most services subscribing to the firehose</li>
+<li>All messages on the firehose are JSON objects with string keys and values, more specifically they are of the type <code>map[string]string</code>.</li>
+<li>All events have an <code>eventType</code> which is unique to each event</li>
+<li>All events should have a <code>timestamp</code> field which is a string representation of a timestamp</li>
+</ul>
+<p>For example an event on the firehose might look like this:</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;eventType&quot;</span>: <span class="hljs-string">&quot;example&quot;</span>,
+    <span class="hljs-string">&quot;timestamp&quot;</span>: <span class="hljs-string">&quot;1462811119&quot;</span>,
+    <span class="hljs-string">&quot;foo&quot;</span>: <span class="hljs-string">&quot;bar&quot;</span>
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/database-access.html" class="navigation navigation-prev " aria-label="Previous page: Database Access"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/distributed-synchronisation.html" class="navigation navigation-next " aria-label="Next page: Distributed Synchronisation"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

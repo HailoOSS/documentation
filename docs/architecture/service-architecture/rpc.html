@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>RPC | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../../architecture/service-architecture/apis.html" />
+    
+    
+    <link rel="prev" href="../../architecture/service-architecture/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.1.1"
+        data-chapter-title="RPC"
+        data-filepath="architecture/service-architecture/rpc.md"
+        data-basepath="../.."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="rpc">RPC</h1>
+<p>RPC is used extensively at Hailo to communicate between services, all synchronous calls made using the <code>client</code> package in the service layer use the RPC mechanism that we will describe in this chapter. Since Hailo services don&apos;t listen on any ports (and our service discovery does not support this) we need some other method of communication, we currently use RabbitMQ as our message bus to solve this issue.</p>
+<p>Before we explain how we use RabbitMQ we need to first explain some RabbitMQ terminology:</p>
+<ul>
+<li>broker: A broker is a RabbitMQ instance that receives messages from publishers (services) and routes them to consumers (also services).</li>
+<li>exchange: An exchange is a &quot;message routing agent&quot; that receives messages and routes them to queues based on the exchange type and any configured bindings. </li>
+<li>queues: A queue is a buffer than consumers consume from</li>
+<li>bindings: Bindings are used to configure the exchange and create mappings between the exchange and a queue.</li>
+</ul>
+<h2 id="exchanges">Exchanges</h2>
+<p>Now we can start explaining how we use RabbitMQ, first we need to explain how RabbitMQ is configured. There are three <code>exchanges</code> that facilitate the service to service communication:</p>
+<ul>
+<li>The <code>h2o</code> exchange is an exchange that uses custom plug-in (called the hailo magic exchange) which is based on the official header exchange however has extra logic for handling weighting rules. You can think of it as a smart router that makes forwarding decisions based on the message headers. By default every new request gets processed by it and its job is to find a recipient. The recipient of the message may be in the current availability zone or it may be in another one. By default all messages are contained in a single AZ as long as there is a service to process them. The big benefit of this set-up is that the only requirement for a service to service communication to happen is the sender to know the name of the recipient. Our platform makes it possible for many instances (same or different versions) of a service to run simultaneously. In such a case the traffic will be load-balanced between all active instances (regardless of their version).</li>
+<li>The <code>h2o.direct</code> exchange is a normal RabbitMQ direct exchange that is used for direct communication to specific instances, this is mainly used for RPC responses.</li>
+<li>The <code>h2o.topic</code> exchange is used for Pub/Sub over RabbitMQ, this is separate from the Pub/Sub over NSQ we discussed and is mainly used for monitoring and discovery.</li>
+</ul>
+<p><img src="../../_assets/images/rpc-rabbitmq-single.png" alt="RabbitMQ Communication inside a single AZ"></p>
+<h2 id="queues">Queues</h2>
+<p>Typically each instance of a service will have its own queue which allows the service to receive messages from RabbitMQ. The queue is created when a service starts and its name looks something like this <code>com.hailocab.service.SERVICE_NAME-UUID</code>. Once the queue is created the service starts consuming from the queue.</p>
+<h2 id="bindings">Bindings</h2>
+<p>As mentioned bindings are used to map requests from the exchanges to queues, for RPC we use two sets of bindings, one between the <code>h2o.direct</code> exchange and the service queues and another between the <code>h2o</code> exchange and the service queues.</p>
+<p>The <code>h2o.direct</code> binding is created by the service when it starts up just like the queue and it is used to ensure that the service gets any messages intended for only that instance such as responses and heartbeats from the discovery service. </p>
+<p>The <code>h2o</code> binding is used for load balancing requests to the services, the bindings contain additional meta-data or headers (such as the service name and weight) which are used by the magic exchange plug-in to ensure that requests are sent to the right service and to balance the traffic based on the weighting rules. The creation process is also slightly more complicated as this is created by the <a href="kernel-service.md#binding-service">binding service</a>, this will be discussed in the linked chapter.</p>
+<h2 id="federation">Federation</h2>
+<p>In the diagram above you saw how Rabbit communicated in a single AZ, the diagram showed the AZ being completely isolated however in practice this is not how RabbitMQ is configured. Each exchange is instead federated allowing one service in zone A to talk to another in zone B. </p>
+<p>Federation is important in ensuring high availability because when an instance of a service becomes unresponsive in one zone we cant to ensure that requests don&apos;t failing, if the zones were isolated then this would not be the case as there would be no other instances that could handle the requests. By federating the requests you can ensure that service remains unaffected as there are other instances that handle the traffic. </p>
+<p><img src="../../_assets/images/rpc-rabbitmq-multiple.png" alt="RabbitMQ Communication inside a single AZ"></p>
+<h1 id="deadletter">Deadletter</h1>
+<p>If a message cannot be routed to a recipient (because the recipient service is not there or is crashing and cannot process anything ) by default it will go into a <code>deadletter</code> queue. Inspecting the <code>deadletter</code> queue for messages is a great way of debugging the state of an AZ when in doubt. You can inspect the content of several messages in the <code>deadletter</code> queue using the &quot;GetMessage&quot; button on the RabbitMQ admin page to get some context.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../architecture/service-architecture/index.html" class="navigation navigation-prev " aria-label="Previous page: Service Architecture"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../architecture/service-architecture/apis.html" class="navigation navigation-next " aria-label="Next page: APIs"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

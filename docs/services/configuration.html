@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Configuration | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../services/database-access.html" />
+    
+    
+    <link rel="prev" href="../services/security.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.5"
+        data-chapter-title="Configuration"
+        data-filepath="services/configuration.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="configuration">Configuration</h1>
+<p>Dynamic configuration is another core part of the H2 platform, we store all configuration as JSON documents in the config service. When a service loads its documentation it requests a series of IDs from the config service which the service then compiles down to a single document. This allows us to maintain a configuration hierarchy which looks something like this:</p>
+<ul>
+<li><code>H2:BASE</code>: The base configuration loaded by every service in every region and environment</li>
+<li><code>H2:BASE:servicename</code>: This configuration is loaded the specified service and is shared by every region and environment</li>
+<li><code>H2:REGION:regionname</code>: This configuration is loaded by every service in the specified region</li>
+<li><code>H2:REGION:regionname:servicename</code>: This configuration is loaded by the specified service in the specified region</li>
+<li><code>H2:ENV:envnaame</code>: This configuration is loaded by every service in the specified environment</li>
+<li><code>H2:ENV:envnaame:servicename</code>: This configuration is loaded by the specified service in the specified environment</li>
+</ul>
+<p>Each item in this list represents an ID of a JSON document, when the config service compiles the final document the config is loaded in the same order as above with the last document overwriting anything already in the previous documents.</p>
+<p>The loading of the configuration is abstracted away by the <code>config</code> service in the service which provides a set of utilities for reading the config. </p>
+<h2 id="waiting-for-configuration">Waiting for configuration</h2>
+<p>If your service needs to have its configuration completed loaded before it can start then it might be worth adding the following line of code to your <code>main.go</code>, this will block up until the time-out duration specified for the config to finish loading.</p>
+<pre><code class="lang-go">...
+config.WaitUntilLoaded(time.Minute * <span class="hljs-number">2</span>)
+
+service.Run()
+</code></pre>
+<h2 id="reading-configuration">Reading configuration</h2>
+<p>Once the configuration has been loaded you are ready to read the configuration, as the configuration is just a JSON document we need some way to access the data. This can be done by either reading the entire document as a <code>[]byte</code> or by accessing path and returning a single value.</p>
+<h3 id="reading-the-entire-document">Reading the entire document</h3>
+<p>To return the entire document you can call the <code>Raw()</code> function which will atomically load the configuration and return the byte slice. It is as simple as that!</p>
+<h3 id="reading-individual-paths">Reading individual paths</h3>
+<p>The library also provides the ability to read a path, for example if we were reading the JSON document below and we wanted to fetch the time-out duration for NSQ then we could use the path <code>service/nsq/timeout</code>.</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;service&quot;</span>: {
+        <span class="hljs-string">&quot;nsq&quot;</span>: {
+            <span class="hljs-string">&quot;timeout&quot;</span>: <span class="hljs-string">&quot;2s&quot;</span>,
+        }
+    }
+}
+</code></pre>
+<p>When using the service layer this would look something like this. The <code>AtPath</code> function returns a <code>ConfigElement</code>, this type has a number of helper functions which have the format <code>AsX</code> where <code>X</code> is another data type. For example <code>AsString</code>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;github.com/HailoOSS/service/config&quot;</span>
+
+value := config.AtPath(<span class="hljs-string">&quot;service&quot;</span>, <span class="hljs-string">&quot;nsq&quot;</span>, <span class="hljs-string">&quot;timeout&quot;</span>)
+timeout := value.AsString()
+</code></pre>
+<h2 id="secrets">Secrets</h2>
+<p>Sometimes you need to store sensitive values somewhere such as API keys or user credentials. While this is unfortunate there is often no way around this, however instead of storing these values in plain text where anybody can view them you can instead encrypt these values before inserting them into the config-service. To encrypt your secrets use the <a href="../tooling/index.html#config-encryptor">config encryptor</a> tool.</p>
+<p>Once you have encrypted the secret it should be saved in the config-service. Each secret should be encrypted and stored separately for each region. For example if you are creating a secret for the example-service then you should save the secret in both <code>H2:REGION:eu-west-1</code> and <code>H2:REGION:us-east-1</code>. The secret might look something like this (the base64 encoded string is the encrypted secret) and can contain any JSON value such as a string, integer or another JSON object:</p>
+<pre><code class="lang-json"><span class="hljs-comment">// Service Config</span>
+{
+    <span class="hljs-string">&quot;hailo&quot;</span>: {
+        <span class="hljs-string">&quot;service&quot;</span>: {
+            <span class="hljs-string">&quot;credentials&quot;</span>: <span class="hljs-string">&quot;Y3JlZGVudGlhbHM=&quot;</span>
+        }
+    }
+}
+
+<span class="hljs-comment">// Encrypted secret</span>
+{
+    <span class="hljs-string">&quot;username&quot;</span>: <span class="hljs-string">&quot;admin&quot;</span>,
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;password&quot;</span>
+}
+</code></pre>
+<p>To read the config you should fetch the path of the encrypted secret and then call <code>Decrypt()</code>, this will return a config element containing the decrypted contents. For example:</p>
+<pre><code class="lang-go">credentials, err := config.AtPath(<span class="hljs-string">&quot;hailo&quot;</span>, <span class="hljs-string">&quot;service&quot;</span>, <span class="hljs-string">&quot;credentials&quot;</span>).Decrypt()
+<span class="hljs-keyword">if</span> err != <span class="hljs-constant">nil</span> {
+    <span class="hljs-comment">// Handle error</span>
+}
+
+username := config.AtPath(<span class="hljs-string">&quot;username&quot;</span>).AsString(<span class="hljs-string">&quot;&quot;</span>)
+Password := config.AtPath(<span class="hljs-string">&quot;password&quot;</span>).AsString(<span class="hljs-string">&quot;&quot;</span>)
+</code></pre>
+<p>If you encrypted the secret without specifying the service name or used some other values in the encryption content then you should <code>DecryptWithContext(map[string]string{...})</code>. This function will still add the region and environment fields to the context.</p>
+<h2 id="subscribing-to-changes">Subscribing to changes</h2>
+<p>Configuration can change and generally you want you services to pick these updates up as quickly as possible. To achieve this every time the configuration is updated a message is published to the <code>config.reload</code> NSQ topic. Services can listen to this by using the <code>SubscribeChanges</code> function which returns a channel. However since NSQ is not federated between regions config updates in one region are not detected in another region so services should periodically reload themselves if needed.</p>
+<p>Subscribing to changes is only required if your service manages so other state based on the results of the configuration. If your service just reads the configuration during each request then built-in caching and reload mechanisms should be good enough.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;github.com/HailoOSS/service/config&quot;</span>
+
+ch := config.SubscribeChanges()
+<span class="hljs-keyword">for</span> {
+    <span class="hljs-keyword">select</span> {
+        <span class="hljs-keyword">case</span> &lt;-ch:
+            <span class="hljs-comment">// Config has reloaded</span>
+        <span class="hljs-keyword">case</span> &lt;-time.After(<span class="hljs-number">5</span> * time.Minute)
+            <span class="hljs-comment">// Check if config has changed</span>
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/security.html" class="navigation navigation-prev " aria-label="Previous page: Security"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/database-access.html" class="navigation navigation-next " aria-label="Next page: Database Access"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

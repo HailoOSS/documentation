@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Security | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../services/configuration.html" />
+    
+    
+    <link rel="prev" href="../services/client.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.4"
+        data-chapter-title="Security"
+        data-filepath="services/security.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="security">Security</h1>
+<p>Security is a core part of the H2 platform and is built-in to the platform and service layers, because of this every service endpoint has auth enabled.</p>
+<h2 id="authentication">Authentication</h2>
+<p>Authentication is almost entirely handled by the login service, this service 
+is responsible for validating user logins storing user credentials and sessions.</p>
+<h3 id="user-management">User Management</h3>
+<p>The login service stores the user credentials for all users (including admins, customers and drivers), the users details for customers and drivers are stored separately and the password is hashed and salted using Bcrypt.</p>
+<p>To <code>auth</code> endpoint is used to check if a username and password are valid, if they are then a session is returned, this session can be used to make requests on behalf of that user. The <code>authas</code> endpoint can be used to create a session for a user however this is only available to users logged in with an <code>ADMIN</code> role.</p>
+<h2 id="sessions">Sessions</h2>
+<p>A session consists of a random ID of 160 bytes base64 encoded to a string. This is what clients should use to identify themselves. The session ID itself contains no user identifiable information on its own. Session are a lookup key for a token.</p>
+<p>Tokens store information about an authenticated user and are signed by a private key that only the login service has access to (this should be managed by isolated deployment to secured nodes). Tokens always expire after 8 hours.</p>
+<p>It is possible for certain tokens to be automatically renewed to give the impression that a user is signed in for longer than 8 hours. This preserves the same session ID and is transparent to people using sessions/tokens. It is not possible for a session/token to be extended if it carries any ADMIN roles. In this situation, users must re-authenticate themselves every 8 hours.</p>
+<p>There is a constraint that users can only maintain one active session per-application per-device type. The device type is any arbitrary string that means an application can maintain two sessions for different use cases. For example you may have one session on a Hailo web client and another on a phone. However if you were to try to establish a new session on another phone, the first phone would have its session invalidated.</p>
+<p>Sessions are cached locally by clients and thus the login service broadcasts session expiry globally (via federated NSQ) such that clients can clear down their cache and hence invalidate tokens faster than the maximum bounded 8 hours. This is an optimisation. There are no cryptographic guarantees of this -- a session once issued could theoretically be exploited by a discrete part of the system for a maximum of 8 hours.</p>
+<h3 id="retrieving-the-authenticated-user">Retrieving the authenticated user</h3>
+<p>To read an authenticated users details you should use the <code>Auth</code> field in a handlers <code>Request</code>. This function returns a fully-initialised authentication scope, from which you can determine if anyone is authenticated and who they are.</p>
+<pre><code class="lang-go">authScope := req.Auth()
+</code></pre>
+<p>To check if the caller is authenticated you can call <code>authScope.IsAuth()</code>, if the user is authenticated then the function will return <code>true</code> and <code>authScope.User()</code> will return a non-nil value. To get the ID of the logged in user you can access the <code>Id</code> field in the user and to get the application type (remember that each application type such as admin, customer and driver each have their own user database) you can call <code>Application()</code>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">if</span> authScope.IsAuth() {
+    user := authScope.User()
+
+    fmt.Printf(<span class="hljs-string">&quot;Logged in as %s on %s/%s&quot;</span>, user.Application(), user.Id)
+}
+</code></pre>
+<h3 id="ldap">LDAP</h3>
+<p>The login service also has some integration with our LDAP directory via the LDAP service, this allows admin users to login via their admin account using one account that is shared between environments. Currently the permissions given to the LDAP users are determined based on which LDAP groups the user is in.</p>
+<h2 id="authorisation">Authorisation</h2>
+<p>H2 uses role based access control for authorisation, to achieve this when a user logs in they are given a token which contains the roles that the user has. These roles are checked whenever making requests against an endpoint that is protected with an Authoriser.</p>
+<h3 id="protecting-an-endpoint">Protecting an endpoint</h3>
+<p>Service endpoints are protected by &quot;Authorisers&quot;, an authoriser is some value that implements the <code>Authoriser</code> interface. This interface has a single function which validates a request and returns an error if the session does not have permission to use the endpoint.</p>
+<p>A endpoints authoriser is configured at the same time as the endpoint is registered (when calling <code>Register</code>). To set the authoriser the <code>Authoriser</code> field should be set in the <code>Endpoint</code> struct. By default if no <code>Authoriser</code> is set when registering then a default role authoriser is used which only allows requests from sessions with the <code>ADMIN</code> role.</p>
+<pre><code class="lang-go">service.Register(&amp;service.Endpoint{
+    Name:             <span class="hljs-string">&quot;hello&quot;</span>,
+    Handler:          handler.Hello,
+    Mean:             <span class="hljs-number">500</span>,
+    Upper95:          <span class="hljs-number">1000</span>,
+    RequestProtocol:  <span class="hljs-built_in">new</span>(helloproto.Request),
+    ResponseProtocol: <span class="hljs-built_in">new</span>(helloproto.Response),
+    Authoriser:       service.OpenToTheWorldAuthoriser(),
+})
+</code></pre>
+<p>There are a number of different authorisers which handle authorisation slightly different:</p>
+<ul>
+<li><p><code>OpenToTheWorldAuthoriser</code>: This authoriser allows anybody with or without a session to call the endpoint.</p>
+</li>
+<li><p><code>RoleAuthoriser</code>: This authoriser only allows requests from a session with the given roles.</p>
+</li>
+</ul>
+<pre><code class="lang-go">RoleAuthoriser([]<span class="hljs-typename">string</span>{<span class="hljs-string">&quot;ADMIN&quot;</span>})
+</code></pre>
+<ul>
+<li><p><code>SignInAuthoriser</code>: This authoriser only allow requests from signed in users</p>
+</li>
+<li><p><code>SignInRoleAuthoriser</code>: This authoriser combines both the <code>RoleAuthoriser</code> and the <code>SignInRoleAuthoriser</code> and requires a real user to be signed in with the specified roles.</p>
+</li>
+</ul>
+<h3 id="checking-permissions">Checking permissions</h3>
+<p>Sometimes using an authoriser is not enough and you might want to write some custom code to authorise the user. For example you might create an endpoint that uses the role authoriser with the roles <code>ADMIN</code> and <code>CUSTOMER</code>, then in the handler you might want to do some custom validation if the user is a customer but just allow any requests from admins.</p>
+<p>To achieve this you can use the <code>IsAuth</code> and <code>HasRole</code> functions:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">if</span> req.Auth().IsAuth()  {
+    <span class="hljs-keyword">if</span> req.Auth().User().HasRole(<span class="hljs-string">&quot;ADMIN&quot;</span>) {
+        <span class="hljs-comment">// Allow request</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> req.Auth().User().HasRole(<span class="hljs-string">&quot;CUSTOMER&quot;</span>) {
+        <span class="hljs-comment">// Check customer ID</span>
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// Return error</span>
+    }
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/client.html" class="navigation navigation-prev " aria-label="Previous page: Client"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/configuration.html" class="navigation navigation-next " aria-label="Next page: Configuration"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

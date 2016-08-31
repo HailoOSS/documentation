@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Instrumentation | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../architecture/index.html" />
+    
+    
+    <link rel="prev" href="../services/healthchecks.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.10"
+        data-chapter-title="Instrumentation"
+        data-filepath="services/instrumentation.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="instrumentation">Instrumentation</h1>
+<p>No service is complete without proper monitoring, we have already talked about health checks which allow for binary checks which allow us to quickly be notified about potential issues. However often more information is required or you want to view historic information about how your service is running, for this the service layer provides the <code>instrumentation</code> package which allows you to track counters, timing and gauges.</p>
+<p>These metrics are then published to graphite via statsd, to view this data you can use the Grafana front-end which allows you to create dashboards graphing this data. The URL for Grafana is: <code>http://graphite-dashboard.eu-west-1.i.ENV.hailocab.net:3000</code>, you need to replace <code>ENV</code> with the correct environment name (for example <code>lve</code> or <code>stg</code>). There is also the graphite browser which can be accessed via the URL <code>http://graphite.REGION.i.ENV.hailocab.net:8888</code>. you also need to replace the REGION (most of the time using <code>eu-west-</code> here will be sufficient) and ENV here.</p>
+<h2 id="usage">Usage</h2>
+<p>To instrument your service you need to first import the instrumentation, most services use an alias to keep the code tidier. The instrumentation package comes with a default client already setup, which this is often not recommended as it makes testing more difficult we rarely mock the instrumentation so it is fine to use these functions here. For example:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    inst <span class="hljs-string">&quot;github.com/HailoOSS/service/instrumentation&quot;</span>
+)
+</code></pre>
+<p>Once the package has been imported you can start creating metrics. Each metric function has the same basic argument format <code>(sampleRate, bucket, value)</code>. The sample rate is used to reduce the amount of data being sent to graphite which is useful when you are instrumenting a section of code which is being hit very often. The bucket is the name of the metric and is used to determine where the metric is stored in graphite.</p>
+<p>When metrics are sent to graphite they are prefixed with a namespace which is used to show where the metric was published from. For example when publishing a metric with the bucket <code>bucket.test</code> from the example service it will be published to the bucket <code>REGION.MACHINE-CLASS.INSTANCE.METRICTYPE.SERVICENAME.BUCKET</code> (for example <code>eu-west-1.h2o-default.i-5203422c.counter.com.hailocab.service.example.bucket.test</code>).</p>
+<h3 id="counters">Counters</h3>
+<p>A counter is as the name suggests a simple counter, internally graphite sums all values sent to it and stores the count in that time bucket. When calling <code>Counter</code> the count is incremented by the value provided. You can also provide a negative value to decrement the counter.</p>
+<p>For example this function call we increment a counter which is counting the number of errors returned, for this use case we will be more interested in the error rate so we dont need a very high level of accuracy so we can use a lower sample rate.</p>
+<pre><code class="lang-go">inst.Counter(<span class="hljs-number">0.1</span>, <span class="hljs-string">&quot;handler.test.error&quot;</span>, <span class="hljs-number">1</span>)
+</code></pre>
+<p>In this example we are tracking the number of messages processed in a batch, because we want an accurate count we are using a sample rate of 1 (100%).</p>
+<pre><code class="lang-go">inst.Counter(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;processor.processed&quot;</span>, <span class="hljs-built_in">len</span>(batch))
+</code></pre>
+<h3 id="gauges">Gauges</h3>
+<p>A gauge is the most simple type of metric, it just stores the value at that time, this can be used for measuring the depth of a queue. For example.</p>
+<pre><code class="lang-go">inst.Gauge(<span class="hljs-number">1</span>, <span class="hljs-string">&quot;queue.depth&quot;</span>, <span class="hljs-number">1234</span>)
+</code></pre>
+<h3 id="timers">Timers</h3>
+<p>Timers can be slightly more complicated than the previous types, like a counter they collect numbers and aggregate them. However unlike a counter they also calculate the sum, the count, the upper and the lower values for free.</p>
+<p>It is useful to know that although the API requires passing in a <code>time.Duration</code> graphite doesnt require you to pass in an actual time. This means you can cast any integer to <code>time.Duration</code> and get the benefit of a timer.</p>
+<p>For example you can use a timer to time the execution of a section of code, here we use <code>time.Since()</code> to get the duration between the start time and the time of the measurement.</p>
+<pre><code class="lang-go">start := time.Now()
+<span class="hljs-comment">// Do something expensive</span>
+inst.Timing(<span class="hljs-number">1.0</span>, <span class="hljs-string">&quot;expensive.operation&quot;</span>, time.Since(start))
+</code></pre>
+<h2 id="reading-metrics-in-services">Reading metrics in services</h2>
+<p>Sometimes it might be useful to read the value of a metric inside a service without talking directly to graphite, this can be achieved with the instrumentation package through the use of &quot;saved&quot; metrics. When you setup a saved metric, anytime you call one of the functions the data will also be sent to an in-memory store.</p>
+<p>To setup a saved metric you should first call the save function (<code>SaveCounter</code>, <code>SaveGauge</code>, <code>SaveTimer</code>) with the metric name. Once you have saved the metric you can read the data back by using the correct get function (<code>GetCounter</code>, <code>GetGauge</code>, <code>GetTimer</code>). The get functions return one of the types from the <a href="https://godoc.org/github.com/rcrowley/go-metrics" target="_blank">go-metrics</a> library, these types have helpers functions to read the result back.</p>
+<pre><code class="lang-go">inst.SaveCounter(<span class="hljs-string">&quot;processor.processed&quot;</span>) <span class="hljs-comment">// Save metric</span>
+inst.Counter(<span class="hljs-number">1.0</span>, <span class="hljs-string">&quot;processor.processed&quot;</span>, <span class="hljs-number">1</span>) <span class="hljs-comment">// Update counter</span>
+inst.GetCounter(<span class="hljs-string">&quot;processor.processed&quot;</span>).Count() <span class="hljs-comment">// Get value, returns 1</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/healthchecks.html" class="navigation navigation-prev " aria-label="Previous page: Healthchecks"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../architecture/index.html" class="navigation navigation-next " aria-label="Next page: Architecture"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

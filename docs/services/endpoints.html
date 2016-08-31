@@ -1,0 +1,675 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Endpoints | H2 Micro-Services Platform</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../services/client.html" />
+    
+    
+    <link rel="prev" href="../services/initialisation.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="Endpoints"
+        data-filepath="services/endpoints.md"
+        data-basepath=".."
+        data-revision="Wed Aug 31 2016 13:48:19 GMT+0000 (UTC)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="getting-started/index.html">
+            
+                
+                    <a href="../getting-started/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="getting-started/installation.html">
+            
+                
+                    <a href="../getting-started/installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started/setup-credentials.html">
+            
+                
+                    <a href="../getting-started/setup-credentials.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Set up Credentials
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="services/index.html">
+            
+                
+                    <a href="../services/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Services
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="services/initialisation.html">
+            
+                
+                    <a href="../services/initialisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Initialisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="services/endpoints.html">
+            
+                
+                    <a href="../services/endpoints.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Endpoints
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="services/client.html">
+            
+                
+                    <a href="../services/client.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Client
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="services/security.html">
+            
+                
+                    <a href="../services/security.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Security
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="services/configuration.html">
+            
+                
+                    <a href="../services/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="services/database-access.html">
+            
+                
+                    <a href="../services/database-access.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Database Access
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="services/pub-sub.html">
+            
+                
+                    <a href="../services/pub-sub.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        Pub/Sub
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="services/distributed-synchronisation.html">
+            
+                
+                    <a href="../services/distributed-synchronisation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Distributed Synchronisation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="services/healthchecks.html">
+            
+                
+                    <a href="../services/healthchecks.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        Healthchecks
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="services/instrumentation.html">
+            
+                
+                    <a href="../services/instrumentation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        Instrumentation
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="architecture/index.html">
+            
+                
+                    <a href="../architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="architecture/service-architecture/index.html">
+            
+                
+                    <a href="../architecture/service-architecture/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Service Architecture
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="architecture/service-architecture/rpc.html">
+            
+                
+                    <a href="../architecture/service-architecture/rpc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                        RPC
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="architecture/service-architecture/apis.html">
+            
+                
+                    <a href="../architecture/service-architecture/apis.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                        APIs
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="architecture/service-architecture/kernel-services.html">
+            
+                
+                    <a href="../architecture/service-architecture/kernel-services.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                        Kernel Services
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="architecture/service-architecture/deployment.html">
+            
+                
+                    <a href="../architecture/service-architecture/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="architecture/shared-infrastructure/index.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Shared Infrastructure
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="architecture/shared-infrastructure/cassandra.html">
+            
+            <span><b>3.2.1.</b> Cassandra</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="architecture/shared-infrastructure/logging.html">
+            
+                
+                    <a href="../architecture/shared-infrastructure/logging.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.2.</b>
+                        
+                        Logging
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="architecture/shared-infrastructure/memcached.html">
+            
+            <span><b>3.2.3.</b> Memcached</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="architecture/shared-infrastructure/nsq.html">
+            
+            <span><b>3.2.4.</b> NSQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="architecture/shared-infrastructure/puppet.html">
+            
+            <span><b>3.2.5.</b> Puppet</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.6" data-path="architecture/shared-infrastructure/rabbitmq.html">
+            
+            <span><b>3.2.6.</b> RabbitMQ</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.7" data-path="architecture/shared-infrastructure/zookeeper.html">
+            
+            <span><b>3.2.7.</b> Zookeeper</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="architecture/network-architecture/index.html">
+            
+            <span><b>3.3.</b> Network Architecture</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tooling/index.html">
+            
+                
+                    <a href="../tooling/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Tooling
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >H2 Micro-Services Platform</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="server-endpoints">Server Endpoints</h1>
+<p>In H2 different services talk to each other using RPC, this allows services to execute functions on another machine through a well defined interface as if it was running in the same process. To process these requests services must register these functions (or handlers) as endpoints when the service starts.</p>
+<p>All requests currently use protobuf to serialize data being sent between services which is a typed data format that is well supported in most languages. Unlike some other systems these requests are not sent directly to a specific host using HTTP, instead services publish messages to RabbitMQ.</p>
+<h2 id="protobuf-messages">Protobuf messages</h2>
+<p>As mentioned all endpoints communicate using Protobuf, each endpoint handler accepts a message named <code>Request</code> and returns a message named <code>Response</code>. For example here is a simple file containing the messages for a hello world endpoint.</p>
+<pre><code class="lang-protobuf">package com.hailocab.service.example.hello;
+
+message Request {
+}
+
+message Response {
+    optional string message = 1;
+}
+</code></pre>
+<p>As you can see the file contains the package namespace that is unique to the endpoint, for example the file above refers to the <code>hello</code> endpoint in the example service.</p>
+<p>This file should be stored in <code>proto/hello/hello.proto</code>. Once the file has been created you should run the <a href="../tooling/index.html#h2protoc">h2protoc</a> tool.</p>
+<h2 id="creating-a-handler">Creating a handler</h2>
+<p>Once the message formats have been defined using Protobuf the handlers should be created, this is as simple as creating a function in the <code>handler</code> directory of your service. This function should have the format of <code>func(*server.Request) (proto.Message, errors.Error)</code>. The request contains the protobuf message and additional data such as the users session and the request headers.</p>
+<p>The function also takes advantage of Go&apos;s multiple return values, here we either return a Protobuf message or an error. The Protobuf message here is not wrapped by any other data structure. The error value however is slightly different as we use our own error values to represent different error types, this also lets us map error values to HTTP error codes when returned by the thin API.</p>
+<h3 id="simple-hello-world-handler">Simple &quot;Hello World&quot; handler</h3>
+<p>Using the same proto we created earlier we can now create a simple hello world handler, this handler will just return the message &quot;Hello World&quot;.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> handler
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/HailoOSS/protobuf/proto&quot;</span>
+
+    <span class="hljs-string">&quot;github.com/HailoOSS/platform/errors&quot;</span>
+    <span class="hljs-string">&quot;github.com/HailoOSS/platform/server&quot;</span>
+
+    helloproto <span class="hljs-string">&quot;github.com/HailoOSS/example-service/proto/hello&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> Hello(req *server.Request) (proto.Message, errors.Error) {
+    <span class="hljs-keyword">return</span> &amp;helloproto.Response{
+        Message: proto.String(<span class="hljs-string">&quot;Hello World&quot;</span>),
+    }, <span class="hljs-constant">nil</span>
+}
+</code></pre>
+<h3 id="accessing-request-data">Accessing request data</h3>
+<p>In the above request we did not read any fields in the request message, if we need to access the request we should do the following in our handler.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> Hello(req *server.Request) (proto.Message, errors.Error) {
+    request := req.Data().(*helloproto.Request)
+
+    <span class="hljs-comment">// Do something with request</span>
+
+    <span class="hljs-keyword">return</span> &amp;helloproto.Response{}, <span class="hljs-constant">nil</span>
+}
+</code></pre>
+<h3 id="returning-errors">Returning Errors</h3>
+<p>As mentioned previously H2 has its own error values, these are located in <code>github.com/HailoOSS/platform/errors</code>. It is important that you choose the correct error type when returning an error in your handlers as this determines what HTTP error code is returned by the thin API and some error types have special behaviour. For example internal server errors can trigger circuit breakers causing all requests to that endpoint to be temporarily blocked. <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<p>Currently the following error types are supported:</p>
+<ul>
+<li>InternalServerError</li>
+<li>BadRequestError</li>
+<li>Forbidden Error</li>
+<li>BadResponseError</li>
+<li>TimeoutError</li>
+<li>NotFoundError</li>
+<li>ConflictError</li>
+<li>UnauthorizedError</li>
+<li>CircuitBrokenError</li>
+</ul>
+<p>To create a new error you should provide a &quot;dotted&quot; error code which identifies the error, try to keep this unique as it will help when debugging, you should also keep it in the format <code>com.hailocab.service.SERVICENAME.ENDPOINT.errorcode</code>. Also required is the error message, this can be either a <code>string</code> or an <code>error</code>. For example to return a <code>NotFoundError</code> in your handler you can do the following:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">return</span> <span class="hljs-constant">nil</span>, errors.NotFoundError(server.Name+<span class="hljs-string">&quot;.hello.usernotfound&quot;</span>, <span class="hljs-string">&quot;User not found&quot;</span>)
+</code></pre>
+<h3 id="registering-the-handler">Registering the handler</h3>
+<p>Once a handler has been created it needs to be registered to allow requests to be handled. This is achieved by updated the <code>main.go</code> file and including the following snippet of code. <sup><a href="#fn_2" id="reffn_2">2</a></sup> All of these fields should always be set, there are other fields that can be set that will be described in other sections.</p>
+<pre><code class="lang-go">service.Register(&amp;service.Endpoint{
+    Name:             <span class="hljs-string">&quot;hello&quot;</span>,
+    Handler:          handler.Hello,
+    Mean:             <span class="hljs-number">500</span>,
+    Upper95:          <span class="hljs-number">1000</span>,
+    RequestProtocol:  <span class="hljs-built_in">new</span>(helloproto.Request),
+    ResponseProtocol: <span class="hljs-built_in">new</span>(helloproto.Response),
+})
+</code></pre>
+<p>The first two values <code>Name</code> and <code>Handler</code> are fairly self explanatory, the name configures what the handler should be exported as, this should almost always be the same as the name of the handler function.</p>
+<p>The next two fields are slightly more complex as they are used to configure the &quot;SLAs&quot; of your endpoint, this just means that by setting these values you are telling other services how fast the endpoint will return. The <code>Mean</code> value is used to say how fast you think you service will respond most of the time. The <code>Upper95</code> field is used to configure how slow you think your service should respond in unusual cases. If a caller detect a request taking longer than these values then the request is cancelled and is marked as having timed out.</p>
+<p>The final two fields are used to configure the request and response data structures, these are used for tooling and when marshalling the request.</p>
+<p>Please note that unless specified all endpoints will require a session with the <code>ADMIN</code> role, for more information see the <a href="security.html">authentication</a> section.</p>
+<blockquote id="fn_1">
+<sup>1</sup>. Currently circuit breakers have been disabled globally as some services do not use the correct error types.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. The <code>handler</code> package and the handlers proto in your service should also be imported.<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
+</blockquote>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../services/initialisation.html" class="navigation navigation-prev " aria-label="Previous page: Initialisation"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../services/client.html" class="navigation navigation-next " aria-label="Next page: Client"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
