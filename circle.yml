@@ -1,0 +1,27 @@
+dependencies:
+  pre:
+    - npm install -g gitbook
+    - npm install -g gulp
+
+test:
+  pre:
+    - gulp build --branch=master
+
+  override:
+    - echo "test"
+
+general:
+  branches:
+    only:
+      - master
+
+deployment:
+  all:
+    branch: /master/
+    commands:
+      - git config --global user.email "platform@hailocab.com"
+      - git config --global user.name "Hailo Bot"
+      - git add docs/
+      - git commit -am "Update book"
+      - git remote add upstream "https://$GH_TOKEN@github.com/HailoOSS/documentation.git"
+      - git push upstream master

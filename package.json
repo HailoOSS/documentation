@@ -1,0 +1,20 @@
+{
+  "name": "h2o-docs",
+  "version": "0.0.0",
+  "description": "H2 docs GitBook.",
+  "main": "README.md",
+  "dependencies": {
+    "gitbook": "^2.6.6",
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gitbook serve"
+  },
+  "devDependencies": {},
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hailocab/docs.git"
+  }
+}
